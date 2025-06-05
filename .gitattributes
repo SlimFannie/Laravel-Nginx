@@ -1,0 +1,9 @@
+* text=auto
+
+# Prise en charge des fichiers de migration SQL ou autres
+*.sql diff
+*.php text diff=php
+*.js  text
+*.css text
+*.json text
+*.md  text
