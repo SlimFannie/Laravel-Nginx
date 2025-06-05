@@ -2,7 +2,7 @@
   "name": "Grand Pope",
   "build": {
     "dockerfile": "Dockerfile",
-    "context": "."
+    "context": ".."
   },
   "forwardPorts": [8000],
   "customizations": {

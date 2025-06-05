@@ -1,9 +1,19 @@
 FROM php:8.4-fpm-alpine
 
-# Install Nginx, Supervisor et dépendances PHP
-RUN apt-get update && apt-get install -y \
-    nginx supervisor git curl zip unzip libpng-dev libonig-dev libxml2-dev \
-    && docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
+# Install Nginx, Supervisord et dépendances PHP
+RUN apk update && apk add --no-cache \
+    nginx \
+    supervisor \
+    git \
+    curl \
+    zip \
+    unzip \
+    libpng-dev \
+    oniguruma-dev \
+    libxml2-dev
+
+# Extensions PHP
+RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
 
 # Installe Composer
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
