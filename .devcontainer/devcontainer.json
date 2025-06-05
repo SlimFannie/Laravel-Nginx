@@ -15,5 +15,5 @@
   "mounts": [
     "source=${localWorkspaceFolder},target=/workspace,type=bind"
   ],
-  "postStartCommand": "/usr/bin/supervisord -n -c /etc/supervisor/conf.d/supervisord.conf"
+  "overrideCommand": false
 }

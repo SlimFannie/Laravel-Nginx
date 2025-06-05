@@ -17,3 +17,5 @@ WORKDIR /workspace
 
 # Ports exposés
 EXPOSE 8000
+
+CMD ["/usr/bin/supervisord", "-n", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
