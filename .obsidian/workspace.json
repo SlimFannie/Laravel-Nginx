@@ -169,5 +169,17 @@
     }
   },
   "active": "8e440dc1ec9c477f",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Sanctuaire/Dockerfile",
+    "docker-compose.dev.yml",
+    "Sanctuaire/storage/framework/views/d41a2eec0abfcf77e62af9fef6440dec.php",
+    "Sanctuaire/storage/framework/views/f7c76ed795bde36471f3e35318af5464.php",
+    "Sanctuaire/storage/framework/views/4b03e308db87bda3a0a9b37bb325e858.php",
+    "Sanctuaire/storage/framework/views/8e6214dbc0fbda2d52d5595cd7d155ed.php",
+    "Sanctuaire/storage/framework/views/8fe177151ffd79b848e786a8e8aa9c79.php",
+    "Sanctuaire/storage/framework/views/6632e87114d28ea81488b330efe22aa4.php",
+    "Sanctuaire/storage/framework/views/eda477c6253ba949d8348b0761c85b70.php",
+    "Sanctuaire/storage/framework/views/0746d48d5eb4a6b2e23967193cfe0555.php",
+    "Sanctuaire/storage/framework/views/e8452ccc4c462a04299dfe157b36de81.php"
+  ]
 }

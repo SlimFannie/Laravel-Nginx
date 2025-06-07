@@ -1,9 +1,8 @@
 {
   "name": "Grand Pope",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "context": ".."
-  },
+  "dockerComposeFile": "docker-compose.dev.yml",
+  "service": "Sanctuaire",
+  "workspaceFolder": "/workspace",
   "forwardPorts": [8000],
   "customizations": {
     "vscode": {
