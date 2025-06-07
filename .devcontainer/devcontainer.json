@@ -1,6 +1,6 @@
 {
   "name": "Grand Pope",
-  "dockerComposeFile": "docker-compose.dev.yml",
+  "dockerComposeFile": "../docker-compose.dev.yml",
   "service": "Sanctuaire",
   "workspaceFolder": "/workspace",
   "forwardPorts": [8000],
