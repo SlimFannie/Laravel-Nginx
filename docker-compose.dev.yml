@@ -1,5 +1,5 @@
 services:
-  Sanctuaire:
+  sanctuaire:
     container_name: Sanctuaire
     build:
       dockerfile: Dockerfile
@@ -8,11 +8,13 @@ services:
       DB_PASSWORD: "${SA_PASSWORD}"
     ports:
       - "8000:8000"
-    depends_on: BaseDeDonneeSql
+    depends_on: 
+      - BaseDeDonneeSql
     networks:
       - NetworkSanctuaire
 
-  BaseDeDonneeSql:
+  basededonnesql:
+    container_name: BaseDeDonneeSql
     image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
       ACCEPT_EULA: "Y"
@@ -24,6 +26,9 @@ services:
       - mssql-data:/var/opt/mssql
     networks:
       - NetworkSanctuaire
+
+volumes:
+  mssql-data:
 
 networks:
   NetworkSanctuaire:
